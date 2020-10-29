@@ -1,4 +1,4 @@
-# Auth0 ♥️ React Workshop Code
+# Auth0 ♥️ React Workshop
 
 This repository is setup to facilitate a hands-on workshop with authentication in React using Auth0.
 
@@ -15,7 +15,7 @@ In this workshop, you'll learn about several crucial concepts.
 - JSON Web Tokens
 - securely calling APIs
 
-During the hands-on portion, you'll follow [this article](https://auth0.com/blog/complete-guide-to-react-user-authentication/). In that article, the frontend and backend projects are in two different repositories. **However, this repository already includes both projects, a React frontend and a Node/Express backend**.
+During the hands-on portion, you'll follow **[this article](https://auth0.com/blog/complete-guide-to-react-user-authentication/)** for the detailed walkthrough. In that article, the frontend and backend projects are in two different repositories. **However, this repository already includes both projects, a React frontend and a Node/Express backend**.
 
 Two important notes on  this...
 
