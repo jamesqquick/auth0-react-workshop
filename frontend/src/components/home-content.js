@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const HomeContent = () => (
   <div className="next-steps">
@@ -14,7 +12,7 @@ const HomeContent = () => (
             rel="noopener noreferrer"
             href="https://auth0.com/docs/connections"
           >
-            <FontAwesomeIcon icon={faLink} className="mr-2" />
+            <i className="fas fa-link mr-2" />
             Configure other identity providers
           </a>
         </h6>
@@ -34,7 +32,7 @@ const HomeContent = () => (
             rel="noopener noreferrer"
             href="https://auth0.com/docs/multifactor-authentication"
           >
-            <FontAwesomeIcon icon={faLink} className="mr-2" />
+            <i className="fas fa-link mr-2" />
             Enable Multi-Factor Authentication
           </a>
         </h6>
@@ -55,7 +53,7 @@ const HomeContent = () => (
             rel="noopener noreferrer"
             href="https://auth0.com/docs/anomaly-detection"
           >
-            <FontAwesomeIcon icon={faLink} className="mr-2" />
+            <i className="fas fa-link mr-2" />
             Anomaly Detection
           </a>
         </h6>
@@ -75,7 +73,7 @@ const HomeContent = () => (
             rel="noopener noreferrer"
             href="https://auth0.com/docs/rules"
           >
-            <FontAwesomeIcon icon={faLink} className="mr-2" />
+            <i className="fas fa-link mr-2" />
             Learn About Rules
           </a>
         </h6>

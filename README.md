@@ -1,6 +1,6 @@
 # Auth0 ♥️ React Workshop
 
-This repository is set up to facilitate a hands-on workshop with authentication in React using Auth0.
+This repository is setup to facilitate a hands-on workshop with authentication in React using Auth0.
 
 ![Auth0 Loves React](./images/auth0-react.jpg)
 
