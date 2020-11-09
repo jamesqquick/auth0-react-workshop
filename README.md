@@ -29,6 +29,16 @@ Each step has a corresponding branch with the starting code for that step. If yo
 
 For example, if you are on Step 1, you would check out the `step-1` branch. To get the finished code from Step 1, you would check out the `step-2` branch.
 
+### Expectations and Requirements
+
+To participate in this workshop, it is expected that you have at least beginner knowledge of JavaScript and React.js.
+
+You will also need to have a few things installed.
+
+- [node.js](https://nodejs.org/en/download/)
+- code editor ([VS Code](https://code.visualstudio.com/) is recommended)
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/)
+
 ## Sign up for Auth0
 
  If you haven't already, [sign up for a free Auth0 account](https://a0.to/react-workshop-signup), which offers you:
