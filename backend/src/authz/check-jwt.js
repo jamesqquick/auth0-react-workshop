@@ -7,11 +7,11 @@ const checkJwt = jwt({
         cache: true,
         rateLimit: true,
         jwksRequestsPerMinute: 5,
-        jwksUri: `${domain}.well-known/jwks.json`,
+        jwksUri: `https://${domain}/.well-known/jwks.json`,
     }),
 
     audience: audience,
-    domain: domain,
+    issuer: `https://${domain}/`,
     algorithms: ['RS256'],
 });
 
