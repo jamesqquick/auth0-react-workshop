@@ -149,15 +149,17 @@ Configure the Amplify CLI.
 
 You will then be taken to the browser where you will need to login with your AWS credentials. After you have logged in successfully, continue in the terminal to setup the region and username.
 
-Region - choose an appropriate region for your site to be hosted in
+`Region` - choose an appropriate region for your site to be hosted in
 
-Username - choose a username for the new user you will create
+`Username` - choose a username for the new user you will create
 
 You should then be taken back to the browser where you can finish creating the new user. Make sure to choose the following configuration for your user.
 
--   AWS Access Type - programmatic access
--   Permissions - you can choose `AdministratorAccess` for demo purposes ( keep in mind, it is recommended to restrict this access more appropriately with a real application)
--   Tags - none
+`AWS Access Type` - programmatic access
+
+`Permissions` - you can choose `AdministratorAccess` for demo purposes ( keep in mind, it is recommended to restrict this access more appropriately with a real application)
+
+`Tags` - none
 
 After you've gone through those settings, click `Create User` and take note of the `Access key ID` and `Secret access key`. Follow the details in the command line by pasting in these two properties appropriately. Lastly, choose a profile name (**remember this as you'll need it shortly**).
 
@@ -175,7 +177,7 @@ Choose a name for your project, and the CLI should complete the following config
 -   build command - `npm run-script build`
 -   start command - `npm run-script start`
 
-If you're prompted to create a new environment, give it a name. Then, **selected the AWS profile you just created**.
+If you're prompted to create a new environment, give it a name. Then, **selected the `AWS profile` you just created**.
 
 Now, run the following command to add hosting to the project. Make sure to choose `Hosting with Amplify Console` and then `Manual`.
 
@@ -197,7 +199,7 @@ Now, you should be able to login/logout in your deployed application.
 
 ## Add Multi-Factor Authentication (Bonus)
 
-To add multi-factor authentication to the app, in the Auth0 dashboard navigate to `Security` -> `Multi-factor Auth`. Then, click on the `Phone Message` section and choose the following options. There are several different options, but a phone message works well here.
+To add multi-factor authentication to the app, in the Auth0 dashboard navigate to `Security` -> `Multi-factor Auth`. Then, click on the `Phone Message` section and choose the following options. There are several different options, but a phone message works well here. For more info, refer to the [Multi-Factor Authentication docs](https://auth0.com/docs/mfa).
 
 -   Choose a delivery provider - Auth0
 -   Choose a delivery method - SMS
