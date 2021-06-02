@@ -1,6 +1,6 @@
 # Auth0 ♥️ React Workshop
 
-This repository is set up to facilitate a hands-on workshop with authentication in React using Auth0. There are a few additional sections for adding multi-factor authentication and deploying to AWS Amplify.
+This repository is set up to facilitate a hands-on workshop with authentication in React using Auth0. There are a few additional sections for adding multi-factor authentication and deployment.
 
 ![Auth0 Loves React](./images/auth0-react.jpg)
 
@@ -15,7 +15,7 @@ In this workshop, you'll learn about several crucial concepts.
 -   JSON Web Tokens
 -   securely calling APIs
 -   (bonus) multi-factor authentication
--   (bonus) how to deploy/host your application with AWS Amplify
+-   (bonus) how to deploy/host your application
 
 During the majority of the hands-on portion, you'll follow **[this article](https://auth0.com/blog/complete-guide-to-react-user-authentication/)** for the detailed walkthrough. In that article, the frontend and backend projects are in two different repositories. **However, this repository already includes both projects, a React frontend and a Node/Express backend**.
 
@@ -135,27 +135,31 @@ git checkout step-7
 
 [Follow the hands-on instructions](https://auth0.com/blog/complete-guide-to-react-user-authentication/#Calling-an-API)
 
-**Optional** Hosting with AWS Amplify
+## Hosting (Bonus)
 
-For deploying the React application to AWS Amplify from the Amplify CLI, you'll need the [Amplify CLI](https://docs.amplify.aws/cli/start/install) installed and a user profile set up in AWS that has sufficient access. If you don't have a user created, you can create one in the steps below.
+### Hosting with AWS Amplify
 
-Make sure to navigate into the `frontend` directory in your terminal if you aren't already. Then, configure the Amplify CLI.
+For deploying the React application to AWS Amplify, you'll need the [Amplify CLI](https://docs.amplify.aws/cli/start/install) installed and a user profile set up in AWS that has sufficient access. If you don't have a user created, you can create one in the steps below.
+
+> Make sure to navigate into the `frontend` directory in your terminal if you aren't already.
+
+Configure the Amplify CLI.
 
 `amplify configure`
 
-You will then be taken to the browser where you will need to login with your AWS credentials. After you have logged in successfully, continue in the terminal.
+You will then be taken to the browser where you will need to login with your AWS credentials. After you have logged in successfully, continue in the terminal to setup the region and username.
 
-Choose your region. In this example, I'm using `us-east-1`.
+Region - choose an appropriate region for your site to be hosted in
 
-Choose a username for your new user. If you have already have a created user, just press enter.
+Username - choose a username for the new user you will create
 
-You should then be taken back to the browser where you can finish creating the new user. Make sure to choose the following setup.
+You should then be taken back to the browser where you can finish creating the new user. Make sure to choose the following configuration for your user.
 
 -   AWS Access Type - programmatic access
--   Permissions - you can choose `AdministratorAccess` for demo purposes although it is recommended to restrict this access more appropriately with a real application
+-   Permissions - you can choose `AdministratorAccess` for demo purposes ( keep in mind, it is recommended to restrict this access more appropriately with a real application)
 -   Tags - none
 
-After you've gone through those settings, click `Create User` and take note of the `Access key ID` and `Secret access key`. Follow the details in the command line by pasting in these two properties appropriately. Lastly, choose a profile name (**you'll need this profile name shortly**).
+After you've gone through those settings, click `Create User` and take note of the `Access key ID` and `Secret access key`. Follow the details in the command line by pasting in these two properties appropriately. Lastly, choose a profile name (**remember this as you'll need it shortly**).
 
 With the CLI configured, now initialize the React project as an AWS Amplify project.
 
@@ -171,7 +175,7 @@ Choose a name for your project, and the CLI should complete the following config
 -   build command - `npm run-script build`
 -   start command - `npm run-script start`
 
-If you're prompted to create a new environment, give it a name. Then, selected the AWS profile you just created.
+If you're prompted to create a new environment, give it a name. Then, **selected the AWS profile you just created**.
 
 Now, run the following command to add hosting to the project. Make sure to choose `Hosting with Amplify Console` and then `Manual`.
 
@@ -181,7 +185,7 @@ And finally, publish the project.
 
 `amplify publish`
 
-After your application has been deployed to Amplify, you should see an HTTPS URL for your deployed app. Open it in the browser to see the app itself.
+After your application has been deployed to Amplify, you should see an HTTPS URL in the terminal for your deployed app. Open it in the browser to see the app itself.
 
 For authentication to work in this deployed app, you'll need to update the following settings in the Auth0 dashboard with the deployed URL. You can add multiple values in these properties by comma-separting them.
 
@@ -191,9 +195,9 @@ For authentication to work in this deployed app, you'll need to update the follo
 
 Now, you should be able to login/logout in your deployed application.
 
-**optional** Add Multi-factor Authentication with Auth0 Actions
+## Add Multi-Factor Authentication (Bonus)
 
-To add multi-factor authentication to the app, in the Auth0 dashboard navigate to `Security -> Multi-factor Auth`. Then, click on the `Phone Message` section and choose the following options.
+To add multi-factor authentication to the app, in the Auth0 dashboard navigate to `Security` -> `Multi-factor Auth`. Then, click on the `Phone Message` section and choose the following options. There are several different options, but a phone message works well here.
 
 -   Choose a delivery provider - Auth0
 -   Choose a delivery method - SMS
