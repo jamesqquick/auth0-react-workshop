@@ -10,7 +10,7 @@ const getPublicMessage = () => {
 
 const getProtectedMessage = () => {
   return {
-    message: "The API successfully validated your access token.",
+    message: 'The API successfully validated your access token.',
   };
 };
 
